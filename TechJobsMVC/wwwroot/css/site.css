@@ -114,6 +114,8 @@ textarea {
 
 td, th {
     padding: 10px;
+    /*border: 1px solid #dddddd;
+    text-align: left;*/
 }
 
 tr:nth-child(odd) {
@@ -132,6 +134,7 @@ table.job-listing {
 
     table.job-listing td:last-child {
         width: 80%;
+
     }
 
 label {
@@ -156,6 +159,10 @@ td {
 tr:nth-child(odd) {
     background-color: #e4e4e4;
 }
+/*tr.spaceUnder > td {
+    background-color: white;
+    padding-bottom: 3em;
+}*/
 
 .centeredTable {
     margin-left: auto;
@@ -183,3 +190,11 @@ label {
 .centered {
     text-align: center;
 }
+
+
+
+
+
+
+
+
