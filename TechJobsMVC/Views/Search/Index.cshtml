@@ -9,7 +9,7 @@
             @foreach (var column in ViewBag.columns)
             {
                 <span>
-                    <input type="radio" name="searchType" id="@column.Key" value="@column.Key" checked="@column.Key == 'all'" />
+                    <input type="radio" autocomplete="off" name="searchType" id="@column.Key" value="@column.Key" checked="@column.Key == 'all'" />
                     <label for="@column.Key">@column.Value</label>
                 </span>
             }
@@ -18,10 +18,10 @@
 
         <p>
             <label for="searchTerm">Keyword:</label>
-            <input type="text" name="searchTerm" id="searchTerm" />
+            <input type="text" name="searchTerm" id="searchTerm" autocomplete="off"/>
         </p>
 
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" autocomplete="off" />
     </form>
 
     <hr />
@@ -125,7 +125,7 @@
                         <tr>
                             <th>
                                 <br>
-
+                                <br>
                             </th>
                             <td>
                             </td>

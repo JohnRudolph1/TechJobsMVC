@@ -5,24 +5,18 @@
 
 <table class="centeredTable">
     <tr>
-        @foreach(var column in ViewBag.columns)
+        @foreach (var column in ViewBag.columns)
         {
             <th>@column.Value</th>
         }
     </tr>
     <tr>
-        @{
-            //TODO #2: Complete the View Jobs By Category Table
-        }
-
         <td>
-             <a asp-controller="List" asp-action="Jobs" asp-route-column="all">View All Jobs</a>
-        </td>  
-        @*Feel free to remove or modify this element if necessary.*@ 
+            <a asp-controller="List" asp-action="Jobs" asp-route-column="all">View All Jobs</a>
+        </td>
+        @*Feel free to remove or modify this element if necessary.*@
         @foreach (var category in ViewBag.tableChoices)
         {
-
-        
             <td>
                 <ul>
                     @foreach (var item in category.Value)
@@ -31,10 +25,8 @@
                             <a asp-controller="List" asp-action="Jobs" asp-route-column="@category.Key" asp-route-value="@item">@item</a>
                         </li>
                     }
-                    
-                    
                 </ul>
             </td>
         }
     </tr>
-        </table>
+</table>
